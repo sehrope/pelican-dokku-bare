@@ -1,0 +1,3 @@
+[submodule "themes/octopress"]
+	path = themes/octopress
+	url = https://github.com/sehrope/pelican-octopress-theme
