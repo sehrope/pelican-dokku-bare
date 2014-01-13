@@ -1,14 +1,17 @@
-A bare bones example of a Pelican generated static site for a blog that you can easily deploy to a PaaS.
+A bare bones example of a [Pelican] generated static site for a blog that you can easily deploy to a PaaS.
 
 ### Installation
 
-First install [Pelican]. For example on Ubuntu you can install it via:
+First [install Pelican](http://docs.getpelican.com/en/3.3.0/getting_started.html#installing-pelican). For example on Ubuntu you can install it via:
 
     # Install pip
     $ sudo apt-get install python-pip
 
-    # Install pelican and markdown (for the posts we'll be writing):
-    $ sudo pip install pelican markdown
+    # Install pelican via pip
+    $ sudo pip install pelican
+    
+    # Install markdown via pip (we're going to write our posts in Markdown)
+    $ sudo pip install markdown
 
 Then to set the bare site up locally, clone this repository:
 
@@ -20,7 +23,7 @@ Then to set the bare site up locally, clone this repository:
 
 ### Usage
 
-To run the dev server locally (*i.e. while're your writing*):
+To run the dev server locally (*i.e. while you are writing a post*):
 
     # Start it up:
     $ ./develop_server.sh start
@@ -40,6 +43,7 @@ To deploy it your Dokku powered PaaS:
 
 ### Features
 
+* Easy to setup
 * Should "just work" out of the box.
 * Includes custom 403, 404, and 500 error pages.
 * Defaults to using a slightly customized Octopress theme. Changing to a different theme is just a matter of picking one and editing pelicanconf.py. There [a lot of themes](https://github.com/getpelican/pelican-themes) to choose from.
@@ -70,6 +74,8 @@ To deploy it your Dokku powered PaaS:
 Add new posts written in Markdown by creating new ".md" files in the `content/posts` directory. You can use the `intro.md` file as an example.
 
 ### License
-Pelican itself is licensed under the AGPL.
+[Pelican] itself is licensed under the [AGPL](https://github.com/getpelican/pelican/blob/master/LICENSE).
 
 The sample site published in this repo is released under the MIT license. See the file [LICENSE](LICENSE).
+
+[Pelican]: http://blog.getpelican.com/
